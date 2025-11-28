@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página Sencilla</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      background: #3b82f6;
+      color: white;
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.4rem;
+    }
+    .card {
+      background: white;
+      margin-top: 40px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #3b82f6;
+      color: white;
+      font-size: 1rem;
+      margin-top: 15px;
+    }
+    button:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Página Sencilla
+  </header>
+
+  <div class="card">
+    <h2>Hola, Samuel 👋</h2>
+    <p>Esta es una página simple hecha con HTML, CSS y JavaScript.</p>
+    
+    <button onclick="mostrarMensaje()">Haz clic aquí</button>
+    <p id="mensaje"></p>
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      const texto = document.getElementById("mensaje");
+      texto.textContent = "¡Funcionó! El botón está respondiendo 😎";
+    }
+  </script>
+</body>
+</html>
